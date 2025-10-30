@@ -11,8 +11,32 @@
 
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="medicine.html">Medicine</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mathematics.html">Internet</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="communications.html">Communications</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 
     <div class="container-fluid">
         
@@ -34,16 +58,20 @@
                 <dd>Smoke signals were used along the great wall of China as warnings of invasion.</dd>
             
                 <dt>Then after a long break, in the 1790s</dt>
-                <dd> <div class="container">
-                    <p>The Chappe telegraph was created by Claude Chappe. His system featured many different towers that could diplay messages via semaphore arms that could be viewed via telescope.</p>
-                
-                    <img src="images/comms_semaphore.jpg" width="10%">
-                    </div>
+                <dd> <div class="splitcontainer">
                     
-                    </dd>
+                    <div class="d_left"><p>The Chappe telegraph was created by Claude Chappe. His system featured many different towers that could diplay messages via semaphore arms that could be viewed via telescope.</p></div>
+                    <div class="d_right"><img src="images/comms_semaphore.jpg" width="80%"></div>
+                    
+                </div></dd>
             
                 <dt>In 1837</dt>
-                <dd>William Cooke and Charles Wheatstone patented an electric telegraphing system with 5 needles and 6 wires, using needle orientations to correspond to letters of the alphabet.</dd>
+                <dd> <div class = "splitcontainer">
+                    <div class="d_left">William Cooke and Charles Wheatstone patented an electric telegraphing system with 5 needles and 6 wires, using needle orientations to correspond to letters of the alphabet.</div>
+                    <div class="d_right"><img src="images/comms_cooke_wheatstone.jpg" width="80%"></div>
+                    
+                
+                </div></dd>
             
                 <dt>At the same time</dt>
                 <dd>Samuel Morse and Alfred Vail created Morse code, another electric telegraphing system.</dd>

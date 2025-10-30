@@ -8,7 +8,7 @@
     width:70%;
     display:grid;
     padding:2%;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
 
 }
 
@@ -19,14 +19,10 @@
 
 
 .d_left {
-    
-    
-    width:50%;
     float:left;
 }
 .d_right {
     
     margin:2%;
-    width:45%;
     float:right;
 }
