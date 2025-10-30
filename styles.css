@@ -2,3 +2,31 @@
     margin-left: 50px;
     list-style-type: circle;
 }
+
+
+.splitcontainer {
+    width:70%;
+    display:grid;
+    padding:2%;
+    grid-template-columns: auto auto;
+
+}
+
+.splitcontainer div {
+    padding:4%;
+    margin:2%;
+}
+
+
+.d_left {
+    
+    
+    width:50%;
+    float:left;
+}
+.d_right {
+    
+    margin:2%;
+    width:45%;
+    float:right;
+}
