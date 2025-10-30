@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity</title>
+    <link rel = "stylesheet" href = "styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <h1>Security Online</h1>
+    <h2><a href="index.html">Index Page</a></h2>
+    <p>In today's digital age, cybersecurity is more important than ever. Protecting your personal information and online activities from cyber threats is crucial.</p>
+    <p></p>
+    <ol id="orderedListCyber">
+        <li>Use strong, unique passwords for different accounts.</li>
+        <li>Enable two-factor authentication wherever possible.</li>
+        <li>Keep your software and operating systems up to date.</li>
+        <li>Be cautious of phishing scams and suspicious links.</li>
+        <li>Regularly back up important data.</li>
+    </ol>
+
+    <label for="cars">Physical PenTest Hardware</label>
+
+<select name="Hardware" id="cars">
+  <option value="volvo">Wifi Pineapple</option>
+  <option value="saab">USB RubberDucky</option>
+</select>
+
+<p id="rubberDucky" style="display:none;">
+USB Rubber Ducky looks like a thumb drive but behaves like a tiny, ruthless typist — it injects keystrokes at superhuman speed to automate tasks or simulate how a bad actor might exploit unattended machines. Security pros use it for red-team testing and to teach organisations how a single plugged-in device can bypass naive physical security; ethically it’s a tool for exposure and remediation, not abuse.
+</p>
+
+<p id="wifiPineapple" style="display:none;">
+The WiFi Pineapple is a powerful wireless auditing rig: it maps, impersonates, and analyses Wi-Fi networks to reveal weak spots in how devices and people connect. Pentesters use it to stress-test enterprise and consumer Wi-Fi setups — again, its value is in uncovering weaknesses to fix them, not exploiting them; treat it like a scalpel, not a club.
+</p>
+
+
+
+<script>
+const menu = document.getElementById('cars');
+const r = document.getElementById('rubberDucky');
+const w = document.getElementById('wifiPineapple');
+
+function showChoice(val) {
+  r.style.display = 'none';
+  w.style.display = 'none';
+  if (val === 'volvo') { r.style.display = 'block'; localStorage.setItem('tool','volvo'); }
+  else if (val === 'saab') { w.style.display = 'block'; localStorage.setItem('tool','saab'); }
+  else { localStorage.removeItem('tool'); }
+}
+
+menu.addEventListener('change', () => showChoice(menu.value));
+
+// restore on load
+const saved = localStorage.getItem('tool');
+if (saved) {
+  menu.value = saved;
+  showChoice(saved);
+}
+</script>
+
+</body>
+</html>
