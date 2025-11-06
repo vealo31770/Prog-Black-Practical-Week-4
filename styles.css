@@ -26,15 +26,9 @@
     margin:2%;
     float:right;
 }
-
-.container{
-    
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 3rem;
+.imgcontainer{
+    margin-left: 30%;
 }
-
 .backToTop {
     text-decoration: none;
     align-content: center;
