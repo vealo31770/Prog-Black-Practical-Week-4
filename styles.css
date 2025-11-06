@@ -34,3 +34,9 @@
   grid-template-rows: 1fr;
   gap: 3rem;
 }
+
+.backToTop {
+    text-decoration: none;
+    align-content: center;
+    color:darkslateblue;
+}
